@@ -123,7 +123,7 @@
   .aboutsiteTips h2 {
     margin-right: auto;
     font-size: 36px;
-    font-family: Helvetica;
+    /* font-family: Helvetica; */
     line-height: 1.06;
     letter-spacing: -0.02em;
     color: var(--font-color);
