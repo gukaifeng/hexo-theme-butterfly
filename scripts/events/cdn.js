@@ -38,7 +38,29 @@ hexo.extend.filter.register('before_generate', () => {
       name: 'hexo-theme-butterfly',
       file: 'js/search/algolia.js',
       version
-    }
+    },
+
+    // custom
+    reward: {
+      name: 'hexo-theme-butterfly',
+      file: 'js/custom/reward.js',
+      version
+    },
+    sweetalert2: {
+      name: 'hexo-theme-butterfly',
+      file: 'js/custom/sweetalert2/sweetalert2.all.min.js',
+      version
+    },
+    random: {
+      name: 'hexo-theme-butterfly',
+      file: 'js/custom/random.js',
+      version
+    },
+    countup: {
+      name: 'hexo-theme-butterfly',
+      file: 'js/custom/reward.js',
+      version
+    },
   }
 
   const minFile = file => {
