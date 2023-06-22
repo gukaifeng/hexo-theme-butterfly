@@ -176,7 +176,7 @@
   #about-page .about-statistic {
     min-height: 380px;
     width: 39%;
-    background: url(https://opeach.cn/about/51la.webp) no-repeat top;
+    background: url(/about/51la.webp) no-repeat top;
     background-size: cover;
     color: #fff;
     overflow: hidden;
@@ -335,7 +335,7 @@
   }
   
   .author-content-item.map {
-    background: url(https://bu.dusays.com/2023/03/12/640dc807140d0.png) no-repeat center;
+    background: url(/about/map.png) no-repeat center;
     min-height: 160px;
     max-height: 400px;
     position: relative;
@@ -346,7 +346,7 @@
     transition: 1s ease-in-out;
   }
   [data-theme="dark"] .author-content-item.map {
-    background: url(/about/map-night.webp) no-repeat center;
+    background: url(/about/map.png) no-repeat center;
     background-size: 100%;
   }
   
@@ -646,7 +646,7 @@
     transition: 2s ease-in-out;
   }
   .author-content-item.game-yuanshen {
-    background: url("https://uploadstatic.mihoyo.com/puzzle/upload/puzzle/2023/05/16/44ce304232ab4ee2a821b9144ee82d1c_1713110891755259775.png?x-oss-process=image/format,webp/quality,Q_90") center center / cover no-repeat;
+    background: url("/about/game.webp") center center / cover no-repeat;
     background-size: cover;
     min-height: 300px;
     overflow: hidden;
@@ -669,9 +669,9 @@
     height: 18px;
     margin-right: 0.5rem;
   }
-  .icon-pos-mid {
+  /* .icon-pos-mid {
     background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/25/632fb9cecfc8c.png);
-  }
+  } */
   .author-content-item.game-yuanshen::after {
     box-shadow: 0 -69px 203px 11px #575d8b inset;
     position: absolute;
@@ -684,7 +684,7 @@
   
   .author-content-item.comic-content {
     width: 39%;
-    background: url(https://p0.meituan.net/movie/cd02483f41bdd47aae372691e4cbe3ae1041536.jpg) no-repeat top;
+    background: url(/about/movie.webp) no-repeat top;
     background-size: cover;
     min-height: 300px;
     overflow: hidden;
@@ -701,14 +701,14 @@
   }
   
   .author-content-item.like-technology {
-    background: url(https://www.apple.com.cn/macbook-pro-14-and-16/images/overview/performance/screen_processing__f36dk3ge7wey_large.jpg) no-repeat;
+    background: url(/about/technology.webp) no-repeat;
     background-size: cover;
     min-height: 230px;
     color: #fff;
   }
   
   .author-content-item.like-music {
-    background: url(https://img.dahepiao.com/uploads/allimg/200411/163879-200411143H3111.jpg) no-repeat top;
+    background: url(/about/music.webp) no-repeat top;
     background-size: cover;
     min-height: 400px;
     color: #fff;
