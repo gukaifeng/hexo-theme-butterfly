@@ -58,7 +58,7 @@ hexo.extend.filter.register('before_generate', () => {
     },
     countup: {
       name: 'hexo-theme-butterfly',
-      file: 'js/custom/reward.js',
+      file: 'js/custom/countup.js',
       version
     },
   }
