@@ -16,15 +16,25 @@ if theme.preloader.enable
 script.
   (()=>{
     const $loadingBox = document.getElementById('loading-box')
+    const $loadImage = document.querySelector('.load-image');
     const $body = document.body
     const preloader = {
       endLoading: () => {
         $body.style.overflow = ''
-        $loadingBox.classList.add('loaded')
+        // if theme.preloader.load_style is image
+        $loadImage.classList.remove('blink');
+        $loadImage.classList.add('fadeOut');
+        $loadingBox.classList.add('fadeOut');
+        $loadImage.addEventListener('animationend', () => {
+          $loadingBox.classList.add('loaded')
+        }); 
+        // TODO: else $loadingBox.classList.add('loaded')
       },
       initLoading: () => {
         $body.style.overflow = 'hidden'
         $loadingBox.classList.remove('loaded')
+        $loadingBox.classList.remove('fadeOut');
+        $loadImage.classList.add('blink')
       }
     }
 

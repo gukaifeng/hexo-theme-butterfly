@@ -3,7 +3,9 @@
   z-index 1000
   width 50%
   height 100%
-  background var(--preloader-bg)
+  background #eee
+  
+
 #loading-box
   .loading-left-bg
     @extend .loading-bg
@@ -15,10 +17,10 @@
     z-index -1000
     .loading-left-bg
       transition all 1.0s
-      transform translate(-100%, 0)
+      // transform translate(-100%, 0)
     .loading-right-bg
       transition all 1.0s
-      transform translate(100%, 0)
+      // transform translate(100%, 0)
 #loading-box
   position fixed
   z-index 1000
@@ -40,7 +42,37 @@
     position fixed
     z-index 1001
     display flex
+    width 180px
+    height 180px
 
   &.loaded
     .load-image
       display none
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.load-image.blink {
+  animation: blink 0.8s ease-in-out infinite alternate;
+}
+
+.load-image.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+} 
+
+#loading-box.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+} 
