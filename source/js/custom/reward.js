@@ -1,48 +1,10 @@
 function reward() {
   Swal.fire({
     title: '<strong>您正在为 <u>GuKaifeng</u> 充电</strong>',
-    html: '<b>请选择您的付款方式</b>',
-    icon: 'info',
-    showCancelButton: true,
-    confirmButtonText:
-      '<i class="fa-brands fa-alipay"></i> 支付宝',
-    cancelButtonText:
-      '<i class="fa-brands fa-weixin"></i> 微信支付',
-    confirmButtonColor: '#1677FF',
-    cancelButtonColor: '#2AAE67',
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        title: '感谢您',
-        html: '请打开支付宝 <b>[扫一扫]</b> 以充电',
-        imageUrl: '/img/qrcode/alipay.webp',
-        imageWidth: 300,
-        // imageHeight: 175,
-        imageAlt: 'Custom image'
-      }).then((result) => {
-        Swal.fire(
-          '充电成功',
-          '感谢您的支持',
-          'success'
-        )
-      })
-    } else if (
-      result.dismiss === Swal.DismissReason.cancel
-    ) {
-      Swal.fire({
-        title: '感谢您',
-        html: '请打开微信 <b>[扫一扫]</b> 以充电',
-        imageUrl: '/img/qrcode/wechat.webp',
-        imageWidth: 300,
-        // imageHeight: 175,
-        imageAlt: 'Custom image'
-      }).then((result) => {
-        Swal.fire(
-          '充电成功',
-          '感谢您的支持',
-          'success'
-        )
-      })
-    }
+    html: '请打开<b>微信</b>或<b>支付宝</b> <b>[扫一扫]</b><br /><br />\
+    <div>\
+    <img src="/img/qrcode/wechat.png" alt="Wechat" width="50%" max-width="500px"><img src="/img/qrcode/alipay.png" alt="Alipay" width="50%" max-width="500px">\
+    </div>',
+    confirmButtonColor: '#2f7bf4'
   })
 }
