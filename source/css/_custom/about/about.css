@@ -1301,3 +1301,15 @@
   .reward #people>b {
     color: #777;
   }
+
+
+/* for post page */
+div#post .author-content-item.single.reward {
+  box-shadow: none;
+  height: 120px;
+}
+@media screen and (max-width:768px) {
+  div#post .author-content-item.single.reward {
+    display: none;
+  }
+}
