@@ -5,9 +5,7 @@ function randomPost() {
         do {
             locationHref = ls[Math.floor(Math.random() * ls.length)].innerHTML
             locSplit = locationHref.split('/')[3] || ''
-        } while (locSplit == '' || locSplit == 'tags');
-        //若所有文章都如 https://…….com/posts/2022/07/…… 格式，主域名后字符是 posts，则循环条件改为：
-        //while (locSplit !== 'posts');
-        location.href = locationHref
+        } while (locSplit !== 'posts');
+        location.href = locationHref.split('/').slice(3).join('/')
     })
 }
