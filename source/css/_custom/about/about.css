@@ -1303,6 +1303,15 @@
   }
 
 
+a#edit-reward-list {
+  font-size: 1.3em;
+  color: #e1688e;
+}
+
+a#edit-reward-list:hover {
+  color: #cc0443;
+}
+
 /* for post page */
 div#post .author-content-item.single.reward {
   box-shadow: none;
