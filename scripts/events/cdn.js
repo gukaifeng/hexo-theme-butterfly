@@ -61,6 +61,11 @@ hexo.extend.filter.register('before_generate', () => {
       file: 'js/custom/countup.js',
       version
     },
+    txmap: {
+      name: 'hexo-theme-butterfly',
+      file: 'js/custom/txmap.js',
+      version
+    },
   }
 
   const minFile = file => {
