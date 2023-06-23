@@ -1,5 +1,4 @@
 var CountUp = function (target, startVal, endVal, decimals, duration, options) {
-    console.log("Countup")
     var self = this;
     self.version = function () {
         return "1.9.2";
