@@ -31,15 +31,6 @@ mixin rightsideItem(array)
           //-   i.fas.fa-comments
           button#to_comment(type="button" title=_p("rightside.scroll_to_comment"))
             i.fas.fa-comments
-          script.
-            const target = document.querySelector("#post-comment");
-            document.querySelector("#to_comment").addEventListener("click", () => {
-              target.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-                inline: "nearest"
-              });
-            });
 
 #rightside
   - const { enable, hide, show } = theme.rightside_item_order

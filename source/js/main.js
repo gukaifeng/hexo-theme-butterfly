@@ -355,6 +355,17 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollCollect = scrollTask
 
     window.addEventListener('scroll', scrollCollect)
+
+
+    // to_comment button
+    const target = document.querySelector("#post-comment");
+    document.querySelector("#to_comment").addEventListener("click", () => {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+    });
   }
 
   /**
