@@ -1,7 +1,25 @@
-@media screen and (min-width: 2000px)
-  .layout {
-    max-width: 55%;
-  }
+maxWidth1920AndMinWidth1301()
+  @media screen and (max-width: 1920px) and (min-width: 1301px)
+    {block}
+
+minWidth1921()
+  @media screen and (min-width: 1921px)
+    {block}
+
+.layout
+  +maxWidth1920AndMinWidth1301()
+    width: 65%
+    min-width: 1200px
+  +minWidth1921()
+    width: 60%
+    max-width: 1500px
+
+#aside-content
+  +maxWidth1920AndMinWidth1301()
+    width: 28%
+  +minWidth1921()
+    width: 28%
+
 
 div.recent-post-item,
 div.card-widget,
