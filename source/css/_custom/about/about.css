@@ -968,7 +968,7 @@
   padding: 1rem;
   border-radius: 12px;
   border: var(--style-border-always);
-  width: calc((100% / 3) - 0.5rem);
+  width: calc((100% / 5) - 0.5rem);
   margin: 0 0.25rem 0.5rem 0.25rem;
   box-shadow: 0 8px 16px -4px #2c2d300c;
 }
