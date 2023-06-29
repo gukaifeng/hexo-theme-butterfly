@@ -1,0 +1,88 @@
+.flink .flink-list > .flink-list-item
+  width: calc(100% / 5 - 15px)
+  height: 98px
+  border-radius: 18px
+  box-shadow: var(--card-box-shadow)
+  transition: all .5s
+  &:before
+    transform: scale(1)
+    background: var(--card-bg)
+    transition: all .5s
+  a
+    text-align: left
+    .flink-item-icon
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      border: 2px solid transparent
+      transition: all .5s
+      margin: 20px 10px
+    .flink-item-name
+      color: var(--font-color)
+      font-size: 1.05rem
+      transition: all .3s
+      padding: 21px 15px 0 0
+    .flink-item-desc
+      color: var(--font-color)
+      font-size: 0.85rem
+      transition: all .3s
+      padding: 5px 12px 0 0
+
+    
+  &:hover
+    box-shadow: var(--card-hover-box-shadow)
+    &:before
+      background: #3051E7
+    .flink-item-icon
+      margin: 15px 10px
+      width: 40px
+      height: 40px
+      border: 2px solid white
+      margin: 20px 10px
+    .flink-item-name
+      color: #fff
+    .flink-item-desc
+      color: #fff
+
+.flink .flink-list > .flink-list-item .flink-item-desc
+      white-space: normal
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 40px
+
+[data-theme='dark']
+    .flink .flink-list > .flink-list-item
+        &:before
+            transform: scale(1)
+            background: #2c2c2c
+            transition: all .5s
+          a
+            .flink-item-icon
+                border: 2px solid var(--font-color)
+            .flink-item-name
+                color: var(--font-color)
+            .flink-item-desc
+                color: var(--font-color)
+          &:hover
+            &:before
+              background: #f25d8e
+            .flink-item-icon
+                border: 2px solid #fff
+            .flink-item-name
+                color: #fff
+            .flink-item-desc
+                color: #fff
+
+hr.linkpage {
+  margin: 20px 0
+  width: 20%
+  border-width: 2px
+  border-style: dashed
+  border-color: pink
+}
+
+.flink .flink-list
+  padding: 0
