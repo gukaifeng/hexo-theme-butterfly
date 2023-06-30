@@ -782,14 +782,17 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  const unRefreshFn = function () {
+  const addToggleEvents = function () {
+    document.getElementById('toggle-menu').addEventListener('click', () => { sidebarFn.open() })
+
     window.addEventListener('resize', () => {
       adjustMenu(false)
       btf.isHidden(document.getElementById('toggle-menu')) && mobileSidebarOpen && sidebarFn.close()
     })
-
     document.getElementById('menu-mask').addEventListener('click', e => { sidebarFn.close() })
+  }
 
+  const unRefreshFn = function () {
     clickFnOfSubMenu()
     GLOBAL_CONFIG.islazyload && lazyloadImg()
     GLOBAL_CONFIG.copyright !== undefined && addCopyright()
@@ -830,9 +833,9 @@ document.addEventListener('DOMContentLoaded', function () {
     tabsFn.clickFnOfTabs()
     tabsFn.backToTop()
     switchComments()
-    document.getElementById('toggle-menu').addEventListener('click', () => { sidebarFn.open() })
   }
 
+  addToggleEvents()
   refreshFn()
   unRefreshFn()
 })
