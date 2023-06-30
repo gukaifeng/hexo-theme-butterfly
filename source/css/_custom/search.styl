@@ -1,0 +1,53 @@
+#nav
+    z-index 0
+
+div#local-search
+    opacity .95
+
+#local-search .search-dialog .local-search-box input
+    border-radius: 12px
+    transition: all .5s
+
+div.search-dialog
+    border: 1px solid transparent
+    transition: all .5s
+    &:hover
+        border: 1px solid #42444a
+
+@media screen and (max-width: 768px)
+    div.search-dialog
+        width: 80%
+        height: calc(var(--search-height) * 0.8)
+        margin-left: 10%
+        margin-top: calc(var(--search-height) * 0.1)
+    #local-search .search-dialog .search-result-list
+        max-height: calc(var(--search-height) * 0.8 - 220px) !important
+
+@media screen and (min-width: 769px)
+    div.search-dialog
+        width: 768px
+        margin-left: -384px
+
+div.local-search-hit-item
+    border 1px solid #e3e8f7
+    border-radius var(--gukaifeng-card-border-radius)
+    margin-bottom: 8px
+    padding 12px 24px
+    box-shadow: var(--card-box-shadow)
+    transition: all .5s
+    &::before
+        display: none
+    &:hover
+        box-shadow: var(--card-hover-box-shadow);
+
+[data-theme='dark']
+    div#local-search
+        opacity .95
+    div.search-dialog
+        background: #1d1e22
+    #local-search .search-dialog .local-search-box input
+        border 2px solid #42444a
+    .search-dialog .search-nav .search-dialog-title
+        color: #eee
+    div.local-search-hit-item 
+        border 1px solid #42444a
