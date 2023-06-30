@@ -1,15 +1,14 @@
 //- 为了方便，暂时直接挪用 about 页面的 id 和 class 名字了，混用 CSS ，以后有空再拆开
 
 #about-page
+  - let { content, random, flink_url } = page
   .author-content
     .author-content-item.single.reward
       .author-content-item-tips 和朋友们一起进步
       span.author-content-item-title 友情链接
       hr.linkpage
       .flink
-        - let { content, random, flink_url } = page
-        - let pageContent = content
-
+        //- - let pageContent = content
         if flink_url || random
           - const linkData = flink_url ? false : site.data.link || false
           script.
@@ -85,5 +84,10 @@
 
               - result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
 
-            - pageContent = result + pageContent
-        != pageContent
+            - link_result = result
+        != link_result
+  .author-content
+    .author-content-item.single.reward.link-apply
+        #article-container
+          != content
+    

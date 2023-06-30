@@ -433,6 +433,10 @@
   width: 100%;
 }
 
+.author-content-item.single.link-apply {
+  padding-bottom: 50px;
+}
+
 .author-content-item.map .map-title {
   position: absolute;
   bottom: 0;
