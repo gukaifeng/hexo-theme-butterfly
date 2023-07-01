@@ -35,6 +35,7 @@ script.
         $loadingBox.classList.remove('loaded')
         $loadingBox.classList.remove('fadeOut');
         $loadImage.classList.add('blink')
+        setTimeout(preloader.endLoading, 2000); // 设置为 2 秒后执行 endLoading 函数
       }
     }
 
