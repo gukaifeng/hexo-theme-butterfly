@@ -40,3 +40,8 @@ div.swal2-popup {
 #rightside
   opacity 0.8
   transform translateX(-58px)
+
+if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
+  [data-theme='dark']
+    #web_bg:before
+      background-color: alpha($dark-black, 0.2)

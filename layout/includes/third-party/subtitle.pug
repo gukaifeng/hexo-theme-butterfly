@@ -7,9 +7,10 @@ script.
       window.typed = new Typed('#subtitle', Object.assign({
         strings: str,
         startDelay: 300,
-        typeSpeed: 150,
-        loop: true,
+        typeSpeed: 100,
+        loop: false,
         backSpeed: 50,
+        fadeOut: true,
       }, !{JSON.stringify(typed_option)}))
     },
     run: (subtitleType) => {
